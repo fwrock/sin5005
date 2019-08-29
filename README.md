@@ -1,4 +1,4 @@
-# SIN5005_topicos_eng_software
+# SIN5005 - Tópicos em Engenharia de Software
 
 Disciplina SIN5005_topicos_eng_software repositório criado para realizar as atividades solicitadas pelo professor. O grupo fará um trabalho com o tema: "Mercado Livre da construção civil"
 
@@ -32,6 +32,53 @@ Code Climate Maintainability:
 
 Code Climate Test Coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/307cd1872c40fd5ffc35/test_coverage)](https://codeclimate.com/github/WallisonCarlos/sin5005/test_coverage)
+
+# Instalação e execução
+
+- Obs.: O passo 4 sempre é executado para subir a aplicação. Do Passo 5 até o passo 9 basta executar uma vez. O passo de e 11 é sempre que mudar algo na estrutura do meu banco de dados é necessário atualizar rodando as minhas migrates.
+
+- 1. Download do projeto:
+
+ - `git clone https://github.com/WallisonCarlos/sin5005.git`
+ 
+- 2. Entrar no diretório raiz do projeto:
+
+ - `cd sin5005/`
+
+- 3. Com o Docker iniciado, executar o seguinte comando para construir as imagens.
+
+ - `docker-compose build`
+ 
+- 4. Executar o seguinte comando para subir os containers e executar a aplicação.
+
+ - `docker-compose up`
+ 
+- 5. Entrar no container do banco de dados (PostgreSQL).
+
+ - `docker-compose run --rm postgres`
+ 
+- 6. Dentro do container executar PostrgreSQL.
+
+ - `psql -U postgres`
+ 
+- 7. Criar banco de dados.
+
+ - `CREATE DATABASE construbem_development;`
+
+- 8. Sair do PostgreSQL.
+
+ - `exit`
+- 9. Sair do container.
+
+ - `exit`
+ 
+- 10. Entrar no container da aplicação.
+
+ - `docker-compose run --rm web`
+
+- 11. Executar as migrations para criar as tabelas no bando de dados.
+ 
+ - `rake db:migrate`
 
 
 # Soluções de Contorno (Problemas e Soluções)
