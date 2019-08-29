@@ -2,7 +2,7 @@
 
 Disciplina sin5005 repositório criado para realizar as atividades solicitadas pelo professor. O grupo fará um trabalho com o tema: "Mercado Livre da construção civil"
 
-[HEROKU -  https://construbem.herokuapp.com](Link para a aplicação)
+[HEROKU - Link da aplicação](https://construbem.herokuapp.com)
 
 # Integrantes
 * Adilson Lopes Khouri - NUSP 6411994
@@ -10,7 +10,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 * Francisco Wallison Carlos Rocha - NUSP 11312711
 * Luciano Gonçalves de Carvalho - NUSP 9412079
 
-# Arcabouço Desenvolvimento
+# Ferramentas de teste
 
 1. [Cucumber](https://cucumber.io/docs/installation/ruby/)
 2. [Jasmine](https://jasmine.github.io/pages/getting_started.html)
@@ -35,7 +35,7 @@ Code Climate Test Coverage:
 
 # Instalação e execução
 
-- Obs.: O passo iv sempre é executado para subir a aplicação. Do Passo v até o passo ix basta executar uma vez. O passo de e xi é sempre que mudar algo na estrutura do meu banco de dados é necessário atualizar rodando as minhas migrates.
+- Obs.: O passo 4 sempre é executado para subir a aplicação. Do Passo 5 até o passo 9 basta executar uma vez. O passo de e 11 é sempre que mudar algo na estrutura do meu banco de dados é necessário atualizar rodando as minhas migrates.
 
 1. Download do projeto:
 
