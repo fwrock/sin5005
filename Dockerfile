@@ -1,11 +1,11 @@
-ARG RUBY_VERSION
+ENV RUBY_VERSION=2.6.3
 # See explanation below
 FROM ruby:$RUBY_VERSION
 
-ARG PG_MAJOR
-ARG NODE_MAJOR
-ARG BUNDLER_VERSION
-ARG YARN_VERSION
+ENV PG_MAJOR=11
+ENV NODE_MAJOR=11
+ENV BUNDLER_VERSION=1.17.3
+ENV YARN_VERSION=2.0.2
 
 # Add PostgreSQL to sources list
 RUN curl -sSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
@@ -54,3 +54,5 @@ WORKDIR /app
 COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 RUN bundle install
+
+CMD bash ./start.sh
