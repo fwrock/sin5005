@@ -118,3 +118,21 @@ Problema com o rack features, basta adicionar o gem data-cleaner para funcionar 
 
 Lembrar de não fazer commit direto no github é desagradável corrigir no git.
 
+# Como fazer commit's no git
+1. Crie e troque para uma nova branch
+ - `git checkout -b BRANCH_NOVA`
+2. Realize suas alterações, modificações...
+3. Rode os testes, eles devem ficar verde.
+4. Adicione as mudanças no stage area
+- `git add .`
+5. Realize o commit de tudo que está no stagging area
+- `git commit -m "pequena descrição do commit"`
+6. Troque para o branch master
+- `git checkout master`
+7. Realize o merge
+- `git merge BRANCH_NOVA`
+8. Atualize o github
+- `git push origin master`
+9. Atualize o git dentro do heroku 
+- `git push heroku`
+ 
