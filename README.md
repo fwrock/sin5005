@@ -1,6 +1,6 @@
 # SIN5005 - Tópicos em Engenharia de Software
 
-Disciplina sin5005 repositório criado para realizar as atividades solicitadas pelo professor. O grupo fará um trabalho com o tema: "Mercado Livre da construção civil"
+Disciplina sin5005 repositório criado para realizar as atividades solicitadas pelo professor. O grupo fará um trabalho com o tema: "Mercado Livre da construção civil".
 
 [HEROKU - Link da aplicação](https://construbem.herokuapp.com)
 
@@ -9,6 +9,16 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 * Alberto Dumont Alves Oliveira - NUSP 9408481
 * Francisco Wallison Carlos Rocha - NUSP 11312711
 * Luciano Gonçalves de Carvalho - NUSP 9412079
+
+# Kanban ([Trello](https://trello.com))
+
+1. Product Backlog
+  
+  - [Acessar Product Backlog](https://trello.com/b/c9Hobl8m/construbem)
+
+2. Sprints
+  
+  - [Sprint #1](https://trello.com/b/PBo4hSWH/sprint-1)
 
 # Ferramentas de teste
 
