@@ -89,6 +89,10 @@ Code Climate Test Coverage:
 11. Executar as migrations para criar as tabelas no bando de dados.
  
   - `rake db:migrate`
+  
+12. Caso o servidor o container do Webpack suba e caia, executar esse comando dentro do container web.
+ 
+  - `bundle exec rails webpacker:install`
 
 
 # Soluções de Contorno (Problemas e Soluções)
