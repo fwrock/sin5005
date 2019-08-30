@@ -14,7 +14,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 
 1. Product Backlog
   
-  - [Acessar Product Backlog](https://trello.com/b/c9Hobl8m/construbem)
+  - [Acessar Product Backlog](https://trello.com/b/c9Hobl8m/product-backlog)
 
 2. Sprints
   
