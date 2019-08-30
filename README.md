@@ -43,6 +43,15 @@ Code Climate Maintainability:
 Code Climate Test Coverage:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/307cd1872c40fd5ffc35/test_coverage)](https://codeclimate.com/github/WallisonCarlos/sin5005/test_coverage)
 
+
+# Arquitetura da nossa infra
+Temos dois dockers configurados um para banco de dados (postgresql) e outro para servidor web (rails).
+O primeiro passo é instalar o docker, em seguida teremos que fazer algumas configurações em ambos os dockers para poder começar a desenvolver.
+
+## Container
+Para verificar quais conteiners estão executando: docker ps -l e pegar seus ids. Para entrar em um conteiner específico: "docker exec -it CONTEINER_ID bash"
+
+
 # Instalação e execução
 
 - Obs.: O passo 4 sempre é executado para subir a aplicação. Do Passo 5 até o passo 9 basta executar uma vez. O passo de e 11 é sempre que mudar algo na estrutura do meu banco de dados é necessário atualizar rodando as minhas migrates.
@@ -55,7 +64,7 @@ Code Climate Test Coverage:
 
   - `cd sin5005/`
 
-3. Com o Docker iniciado, executar o seguinte comando para construir as imagens.
+3. Com o Docker iniciado, executar o seguinte comando para construir as imagens (facilitou minha vida abrir um terminal para cada comando docker).
 
   - `docker-compose build`
  
@@ -77,7 +86,7 @@ Code Climate Test Coverage:
 
 8. Sair do PostgreSQL.
 
-  - `exit`
+  - `\q`
 9. Sair do container.
 
   - `exit`
@@ -86,14 +95,18 @@ Code Climate Test Coverage:
 
   - `docker-compose run --rm web`
 
-11. Executar as migrations para criar as tabelas no bando de dados.
+11. Executar as migrations para criar as tabelas no bando de dados (Não precisa fazer isso no primeiro momento, pode esperar para fazer depois).
  
   - `rake db:migrate`
   
-12. Caso o servidor o container do Webpack suba e caia, executar esse comando dentro do container web.
+12. Caso o servidor o container do Webpack suba e caia, executar esse comando dentro do container web(Não precisa fazer isso no primeiro momento, pode esperar para fazer depois).
  
   - `bundle exec rails webpacker:install`
 
+13. Para verificar se a 'instalação' foi bem sucedida, entre no servidor de aplicação (web) e digite: 
+* rails -v (6.0)
+* ruby -v (2.6)
+* No navegador da SUA máquina (localhost:3000) endereço da aplicação
 
 # Soluções de Contorno (Problemas e Soluções)
 
