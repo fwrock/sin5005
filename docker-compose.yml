@@ -16,7 +16,7 @@ services:
         NODE_MAJOR: '11'
         YARN_VERSION: '1.17.3'
         BUNDLER_VERSION: '2.0.2'
-    command: bundle exec bin/webpack-dev-server
+    command: ["./scripts/start_webpack_dev.sh"]
     volumes:
       - .:/app
     ports:
@@ -33,7 +33,7 @@ services:
         YARN_VERSION: '1.17.3'
         BUNDLER_VERSION: '2.0.2'
     image: construbem:latest
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    command: ["./scripts/wait-for-it.sh", "postgres:54321", "--", "./scripts/start_rails.sh"]
     environment:
       - NODE_ENV=development
       - RAILS_ENV=${RAILS_ENV:-development}
