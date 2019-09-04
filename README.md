@@ -28,6 +28,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 4. [Travis](https://travis-ci.org/WallisonCarlos/sin5005)
 5. [CodeClimate](https://codeclimate.com/github/WallisonCarlos/sin5005)
 6. [Rspec e Capibara](https://medium.com/@anchietajunior/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-b%C3%A1sica-rspec-e-capybara-no-rails-5-3865437c86d0)
+7. [Rubocop](http://www.rubocop.org/en/stable/)
 
 # Badges
 
