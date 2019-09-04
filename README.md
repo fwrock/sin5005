@@ -136,5 +136,6 @@ Lembrar de não fazer commit direto no github é desagradável corrigir no git.
 - `git push origin master`
 9. Atualize o git dentro do heroku 
 - `git push heroku`
-teste Luciano
  
+# Boas práticas de codificação Ruby
+[Ruby_Best_Practices](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
