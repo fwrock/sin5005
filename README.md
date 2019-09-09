@@ -6,7 +6,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 
 # Integrantes
 * Adilson Lopes Khouri - NUSP 6411994
-* Alberto Dumont Alves Oliveira - NUSP 9408481 (PO)
+* Alberto Dumont Alves Oliveira - NUSP 9408481 (PO) Teste git 
 * Francisco Wallison Carlos Rocha - NUSP 11312711
 * Luciano Gonçalves de Carvalho - NUSP 9412079
 
