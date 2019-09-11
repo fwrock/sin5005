@@ -83,6 +83,15 @@ test:
 #
 production:
   <<: *default
-  database: construbem_production
-  username: app
-  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+  database: postgresql-clear-34605
+  username: lowinbgfxsrixj
+  host: postgres://lowinbgfxsrixj:cbc6d159170db354ecac3acc498d2c6eb7f6ed35cd2676b1d9fd9537d8141909@ec2-50-19-222-129.compute-1.amazonaws.com:5432/d60nv1vlm8d5pl
+  password: cbc6d159170db354ecac3acc498d2c6eb7f6ed35cd2676b1d9fd9537d8141909
+ # password: <%= ENV['APP_DATABASE_PASSWORD'] %>
+
+staging:
+  <<: *default
+  database: postgresql-horizontal-20191
+  host: postgres://teiirrqbsdydku:b7435cfb6bcbfbd113f078034e55064ba79cb4376913cbc2572db09f8dd517a9@ec2-54-221-198-156.compute-1.amazonaws.com:5432/df5v86upac498e
+  username: teiirrqbsdydku
+  password: b7435cfb6bcbfbd113f078034e55064ba79cb4376913cbc2572db09f8dd517a9
