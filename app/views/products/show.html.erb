@@ -1,0 +1,15 @@
+<% provide(:title, @product.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="product_info">
+      <h1>
+        <%= @product.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
+
+<%= @product.description %>, <%= @product.price %>,
+<%= @product.created_at %>, <%= @product.updated_at %>
+
+<%= Time.now %>
