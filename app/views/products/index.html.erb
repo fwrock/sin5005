@@ -1,12 +1,9 @@
-<% provide(:title, 'All users') %>
+<% provide(:title, 'Todos os produtos') %>
 <h1>Todos os Produtos</h1>
 
-<%= will_paginate %>
 
 <ul class="products">
   <% @products.each do |product| %>
       <%= render product %>
   <% end %>
 </ul>
-
-<%= will_paginate %>
