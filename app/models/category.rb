@@ -1,6 +1,6 @@
 class Category < ApplicationRecord
 
-    validates :name, presence: true
-    validates :description, presence:true
+    validates :name, presence: true #nome da categoria
+    validates :description, presence:true #descrição da categoria
 
 end
