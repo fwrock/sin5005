@@ -83,15 +83,15 @@ test:
 #
 production:
   <<: *default
-  database: postgresql-clear-34605
-  username: lowinbgfxsrixj
-  host: postgres://lowinbgfxsrixj:cbc6d159170db354ecac3acc498d2c6eb7f6ed35cd2676b1d9fd9537d8141909@ec2-50-19-222-129.compute-1.amazonaws.com:5432/d60nv1vlm8d5pl
-  password: cbc6d159170db354ecac3acc498d2c6eb7f6ed35cd2676b1d9fd9537d8141909
+  database: d7ccmrg5mq8bgr
+  username: rkxtfuilsrzess
+  host: postgres://rkxtfuilsrzess:965d81560e02b0851a202bb4bf30187122d6171f2db7c2ed697b774734308766@ec2-54-227-245-146.compute-1.amazonaws.com:5432/d7ccmrg5mq8bgr
+  password: 965d81560e02b0851a202bb4bf30187122d6171f2db7c2ed697b774734308766
  # password: <%= ENV['APP_DATABASE_PASSWORD'] %>
 
 staging:
   <<: *default
-  database: postgresql-horizontal-20191
-  host: postgres://teiirrqbsdydku:b7435cfb6bcbfbd113f078034e55064ba79cb4376913cbc2572db09f8dd517a9@ec2-54-221-198-156.compute-1.amazonaws.com:5432/df5v86upac498e
-  username: teiirrqbsdydku
-  password: b7435cfb6bcbfbd113f078034e55064ba79cb4376913cbc2572db09f8dd517a9
+  database: dfa85704tkisvu
+  host: postgres://sqmduewixxidll:a734c1be930eba8a95700a738e2dddb624cbd84ad11f9fef211c9faa731ff552@ec2-23-21-115-109.compute-1.amazonaws.com:5432/dfa85704tkisvu
+  username: sqmduewixxidll
+  password: a734c1be930eba8a95700a738e2dddb624cbd84ad11f9fef211c9faa731ff552
