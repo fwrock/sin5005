@@ -10,7 +10,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 * Francisco Wallison Carlos Rocha - NUSP 11312711
 * Luciano Gonçalves de Carvalho - NUSP 9412079
 
-# Kanban ([Trello](https://trello.com))
+# Kanban ([Trello](https://trello.com)) 
 
 1. Product Backlog
   
