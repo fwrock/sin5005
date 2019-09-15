@@ -3,6 +3,7 @@ rvm:
  - 2.6.3
 deploy:
   provider: heroku
+  skip_cleanup: true
   api_key:
     secure: "40473a36-5bf2-4be2-b4ad-ab77b050ef91"
   app:
