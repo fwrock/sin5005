@@ -8,5 +8,5 @@ deploy:
   app:
     master: construbem-staging
     production: construbem
-
+  skip_cleanup: true
 
