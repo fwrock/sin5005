@@ -1,6 +1,10 @@
 language: ruby
 rvm:
  - 2.6.3
+before_script:
+ - bundle exec rake db:create
+ - bundle exec rake db:migrate
+ - bundle exec rake assets:precompile
 deploy:
   provider: heroku
   api_key:
