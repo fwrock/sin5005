@@ -1,6 +1,7 @@
 language: ruby
 rvm:
  - 2.6.3
+sudo: required
 deploy:
   provider: heroku
   skip_cleanup: true
@@ -9,3 +10,10 @@ deploy:
   app:
     master: construbem-staging
     production: construbem
+  run:
+    - "rake db:migrate"
+    - "rake cleanup"
+    - "bundle exec rake assets:precompile"
+
+
+
