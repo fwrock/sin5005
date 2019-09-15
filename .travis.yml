@@ -1,11 +1,9 @@
 language: ruby
 rvm:
  - 2.6.3
-before_script:
- - bundle exec rake db:create
- - bundle exec rake db:migrate
- - bundle exec rake assets:precompile
 deploy:
+  run:
+   - "RAILS_ENV=production bundle exec rake assets:precompile"
   provider: heroku
   api_key:
     secure: "40473a36-5bf2-4be2-b4ad-ab77b050ef91"
