@@ -1,6 +1,3 @@
-before_install:
-  - chmod +x scripts/travis.sh
-script: scripts/travis.sh
 language: ruby
 rvm:
  - 2.6.3
@@ -17,6 +14,6 @@ deploy:
     - "rake db:migrate"
     - "rake cleanup"
     - "bundle exec rake assets:precompile"
-
+    - "rake assets:precompile"
 
 
