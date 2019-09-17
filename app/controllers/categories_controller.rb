@@ -1,6 +1,7 @@
-class CategotyController < ApplicationController
+class CategoriesController < ApplicationController
     def index
-	@categoty = Category.paginate(page: params[:page])
+	#@categories = Category.paginate(page: params[:page])
+	@categories = Category.all
     end
 
     def show
@@ -13,9 +14,9 @@ class CategotyController < ApplicationController
 
     def create
         @category = Category.new(category_params)
-        if @categoty.save
+        if @category.save
             flash[:success] = "Produto cadastrado com sucesso!"
-            redirect_to @product
+            redirect_to @category
         else
             render 'new'
         end
