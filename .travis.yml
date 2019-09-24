@@ -1,12 +1,3 @@
 language: ruby
 rvm:
  - 2.6.3
-deploy:
-  provider: heroku
-  api_key:
-    secure: "40473a36-5bf2-4be2-b4ad-ab77b050ef91"
-  app:
-    master: construbem-staging
-    production: construbem
-  skip_cleanup: true
-
