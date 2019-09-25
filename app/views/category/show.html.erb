@@ -1,0 +1,15 @@
+<% provide(:title, @category.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="category_info">
+      <h1>
+        <%= @category.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
+
+<%= @category.description %>,
+<%= @category.created_at %>, <%= @category.updated_at %>
+
+<%= Time.now %>

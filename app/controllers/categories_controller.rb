@@ -23,7 +23,17 @@ class CategoriesController < ApplicationController
         end
     end
 
-private
+    def edit
+    
+    end
+
+    def update
+    
+    end
+
+    def destroy
+    
+    end
 
     def category_params
       params.require(:category).permit(:name, :description)

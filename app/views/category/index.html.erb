@@ -1,0 +1,9 @@
+<% provide(:title, 'Todas categorias') %>
+<h1>Todos as Categorias</h1>
+
+
+<ul class="category">
+  <% @category.each do |category| %>
+      <%= render category %>
+  <% end %>
+</ul>
