@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+more_categories = [ 
+	{ name: 'Materiais compostos', description: 'concretos e argamassas' },
+	{ name: 'Materiais ceramicos', description: 'telhas, pisos e azulejos' },
+	{ name: 'Residuos perigosos', description: 'tintas e solventes' }
+]
+
+more_categories.each do |cat|
+	Category.create!(cat)
+end
