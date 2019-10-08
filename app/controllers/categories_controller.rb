@@ -24,11 +24,17 @@ class CategoriesController < ApplicationController
     end
 
     def edit
-    
+    	@category = Category.find(params[:id])
     end
 
     def update
-    
+    	@category = Category.find(params[:id])
+    	if @category.update_attributes(category_params)
+ 		flash[:success] = "Categoria alterada com sucesso!"
+      		redirect_to @category
+    	else
+      		render 'edit'
+    	end
     end
 
     def destroy

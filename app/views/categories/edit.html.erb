@@ -1,0 +1,14 @@
+<% provide(:title, 'Alterar Categoria') %>
+<% provide(:button_text, 'Salvar') %>
+<h1>Altere a Categoria</h1>
+<%= form_for(@category) do |c| %>
+  <div class="field">
+    <%= c.label :nome %><br />
+    <%= c.text_field :name %>
+  </div>
+  <div class="field">
+    <%= c.label :descrição %><br />
+    <%= c.text_field :description %>
+  </div>
+  <%= c.submit "Salvar" %>
+<% end %>

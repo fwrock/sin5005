@@ -3,7 +3,7 @@ Given("I am on the categories page") do
 end
 
 When("I clicked on {string} link") do |link|
-  click_link(link)
+  click_on link
 end
 
 When("I fill in {string} with {string}") do |field, value|

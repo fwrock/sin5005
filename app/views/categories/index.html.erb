@@ -15,6 +15,7 @@
         <tr>      
           <td><%= category.name %></td>
           <td><%= category.description %></td>
+	  <td><%= link_to 'Editar', action: 'edit', id: category %></td>
         </tr>
       <% end %>
     </tbody>
