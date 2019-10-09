@@ -9,4 +9,4 @@ Feature: Categories management
     And I fill in "category_name" with "Residuos perigosos"
     And I fill in "category_description" with "tintas, vernizes e solventes"
     When I press "Salvar"
-    Then I should see "Categoria alterada com sucesso!"
+    Then I should see the message "Categoria alterada com sucesso!"
