@@ -1,6 +1,6 @@
 <% provide(:title, 'Todos as categorias') %>
-<h1>Todos as Categorias</h1>
-
+<h1>Todas as Categorias</h1>
+<% link_to 'Nova Categoria', new_category_path %>
 <ul class="categories">
   <table>
     <thead>
@@ -15,7 +15,7 @@
         <tr>      
           <td><%= category.name %></td>
           <td><%= category.description %></td>
-	  <td><%= link_to 'Editar', action: 'edit', id: category %></td>
+	        <td><%= link_to 'Editar', action: 'edit', id: category %></td>
         </tr>
       <% end %>
     </tbody>
