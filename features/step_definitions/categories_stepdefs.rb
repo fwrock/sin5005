@@ -2,18 +2,18 @@ Given("I am on the categories page") do
   visit 'categories/index'
 end
 
-When("I clicked on {string} link") do |link|
+#When("I clicked on {string} link") do |link|
   #click_link(link)
-end
+#end
 
-When("I fill in {string} with {string}") do |field, value|
+#When("I fill in {string} with {string}") do |field, value|
   #fill_in(field, :with => value)
-end
+#end
 
-When("I press {string}") do |button|
+#When("I press {string}") do |button|
   #click_button(button)
-end
+#end
 
-Then("I should see {string}") do |message|
+#Then("I should see {string}") do |message|
   #page.has_content?(message)
-end
+#end
