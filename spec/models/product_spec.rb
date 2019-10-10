@@ -10,7 +10,7 @@ describe Product do
                 old_price: 0 
             )
             product.valid?
-            expect(product.errors[:price]).to include('Preço do produto dever ser maior ou igual a zero!') 
+            expect(product.errors[:price]).to include('Preço do produto deve ser maior ou igual a zero!') 
         end
 
         it "Product old_price less than zero" do
@@ -21,7 +21,7 @@ describe Product do
                 old_price: -1 
             )
             product.valid?
-            expect(product.errors[:old_price]).to include('Preço antigo do produto dever ser maior ou igual a zero!') 
+            expect(product.errors[:old_price]).to include('Preço antigo do produto deve ser maior ou igual a zero!') 
         end
 
         it 'Product name invalid' do 
