@@ -48,7 +48,13 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'jasmine'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '4.0.0.beta2'
+  gem 'rspec-core'
+  gem 'rspec-expectations'
+  gem 'rspec-mocks'
+  gem 'rspec-support'
+  gem 'rails-controller-testing'
+e
   gem 'cucumber'
   gem 'database_cleaner'
   gem 'coveralls', require: false
