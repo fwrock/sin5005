@@ -16,7 +16,7 @@ class CategoriesController < ApplicationController
     def create
         @category = Category.new(category_params)
         if @category.save
-            flash[:success] = "Produto cadastrado com sucesso!"
+            flash[:success] = "Categoria cadastrado com sucesso!"
             redirect_to @category
         else
             render 'new'

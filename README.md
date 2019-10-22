@@ -41,8 +41,9 @@ Travis:
 Code Climate Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/307cd1872c40fd5ffc35/maintainability)](https://codeclimate.com/github/WallisonCarlos/sin5005/maintainability)
 
-Code Climate Test Coverage:
-[![Test Coverage](https://api.codeclimate.com/v1/badges/307cd1872c40fd5ffc35/test_coverage)](https://codeclimate.com/github/WallisonCarlos/sin5005/test_coverage)
+<!-- Enquanto não arrumamos vou deixar comentado -->
+<!-- Code Climate Test Coverage:
+[![Test Coverage](https://api.codeclimate.com/v1/badges/307cd1872c40fd5ffc35/test_coverage)](https://codeclimate.com/github/WallisonCarlos/sin5005/test_coverage) -->
 
 
 # Arquitetura da nossa infra
@@ -139,3 +140,16 @@ Lembrar de não fazer commit direto no github é desagradável corrigir no git.
  
 # Boas práticas de codificação Ruby
 [Ruby_Best_Practices](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
+
+# Rodar os testes
+rodar:
+`rspec` 
+`rails test`
+`cucumber`
+
+Testar apenas 1 feature do cucumber:
+`cucumber features/user/new_user_empty_name.feature`
+
+Observação:
+!!!!TUDO TEM QUE FICAR VERDE ANTES DO COMMIT!!!!
+
