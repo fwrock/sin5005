@@ -54,7 +54,7 @@ group :development do
   gem 'rspec-mocks'
   gem 'rspec-support'
   gem 'rails-controller-testing'
-e
+  gem 'factory_bot_rails'
   gem 'cucumber'
   gem 'database_cleaner'
   gem 'coveralls', require: false
