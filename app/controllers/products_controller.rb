@@ -29,6 +29,9 @@ class ProductsController < ApplicationController
 
     def update
         @product = Product.find(params[:id])
+        if @product.price != product_params[:price]
+            @product.old_price = @product.price
+        end
         if @product.update_attributes(product_params)
             flash[:success] = "Produto atualizado com sucesso!"
             redirect_to @product
@@ -42,6 +45,6 @@ class ProductsController < ApplicationController
     end
 
     def product_params
-        params.require(:product).permit(:name, :price, :old_price, :description)
+        params.require(:product).permit(:name, :price, :description)
     end
 end
