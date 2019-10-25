@@ -1,5 +1,6 @@
 require 'coveralls'
 require 'factory_bot_rails'
+require 'rails-controller-testing'
 Coveralls.wear!
 require 'simplecov'
 SimpleCov.start
