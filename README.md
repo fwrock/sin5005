@@ -6,18 +6,18 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 
 # Integrantes
 * Adilson Lopes Khouri - NUSP 6411994
-* Alberto Dumont Alves Oliveira - NUSP 9408481
+* Alberto Dumont A. Oliveira - NUSP 9408481
 * Francisco Wallison Carlos Rocha - NUSP 11312711
 * Luciano Gonçalves de Carvalho - NUSP 9412079
 
-# Kanban ([Trello](https://trello.com)) 
+# Kanban ([Trello](https://trello.com))
 
 1. Product Backlog
-  
+
   - [Acessar Product Backlog](https://trello.com/b/c9Hobl8m/product-backlog)
 
 2. Sprints
-  
+
   - [Sprint #1](https://trello.com/b/PBo4hSWH/sprint-1)
 
 # Ferramentas de teste
@@ -61,7 +61,7 @@ Para verificar quais conteiners estão executando: docker ps -l e pegar seus ids
 1. Download do projeto:
 
   - `git clone https://github.com/WallisonCarlos/sin5005.git`
- 
+
 2. Entrar no diretório raiz do projeto:
 
   - `cd sin5005/`
@@ -69,19 +69,19 @@ Para verificar quais conteiners estão executando: docker ps -l e pegar seus ids
 3. Com o Docker iniciado, executar o seguinte comando para construir as imagens (facilitou minha vida abrir um terminal para cada comando docker).
 
   - `docker-compose build`
- 
+
 4. Executar o seguinte comando para subir os containers e executar a aplicação.
 
   - `docker-compose up`
- 
+
 5. Entrar no container do banco de dados (PostgreSQL).
 
   - `docker-compose run --rm postgres`
- 
+
 6. Dentro do container executar PostrgreSQL.
 
   - `psql -U postgres`
- 
+
 7. Criar banco de dados.
 
   - `CREATE DATABASE construbem_development;`
@@ -92,20 +92,20 @@ Para verificar quais conteiners estão executando: docker ps -l e pegar seus ids
 9. Sair do container.
 
   - `exit`
- 
+
 10. Entrar no container da aplicação.
 
   - `docker-compose run --rm web`
 
 11. Executar as migrations para criar as tabelas no bando de dados (Não precisa fazer isso no primeiro momento, pode esperar para fazer depois).
- 
+
   - `rake db:migrate`
-  
+
 12. Caso o servidor o container do Webpack suba e caia, executar esse comando dentro do container web(Não precisa fazer isso no primeiro momento, pode esperar para fazer depois).
- 
+
   - `bundle exec rails webpacker:install`
 
-13. Para verificar se a 'instalação' foi bem sucedida, entre no servidor de aplicação (web) e digite: 
+13. Para verificar se a 'instalação' foi bem sucedida, entre no servidor de aplicação (web) e digite:
 * rails -v (6.0)
 * ruby -v (2.6)
 * No navegador da SUA máquina (localhost:3000) endereço da aplicação
@@ -135,15 +135,15 @@ Lembrar de não fazer commit direto no github é desagradável corrigir no git.
 - `git merge BRANCH_NOVA`
 8. Atualize o github
 - `git push origin master`
-9. Atualize o git dentro do heroku 
+9. Atualize o git dentro do heroku
 - `git push heroku`
- 
+
 # Boas práticas de codificação Ruby
 [Ruby_Best_Practices](https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md)
 
 # Rodar os testes
 rodar:
-`rspec` 
+`rspec`
 `rails test`
 `cucumber`
 
@@ -152,4 +152,3 @@ Testar apenas 1 feature do cucumber:
 
 Observação:
 !!!!TUDO TEM QUE FICAR VERDE ANTES DO COMMIT!!!!
-
