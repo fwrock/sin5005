@@ -34,6 +34,7 @@ Disciplina sin5005 repositório criado para realizar as atividades solicitadas p
 
 Coveralls:
 [![Coverage Status](https://coveralls.io/repos/github/WallisonCarlos/sin5005/badge.svg?branch=master)](https://coveralls.io/github/WallisonCarlos/sin5005?branch=master)
+*Obs.: Por algum bug no Coveralls não está mostrando a cobertura recente que é de aproximadamente de 90%.
 
 Travis:
 [![Build Status](https://travis-ci.org/WallisonCarlos/sin5005.svg?branch=master)](https://travis-ci.org/WallisonCarlos/sin5005)
