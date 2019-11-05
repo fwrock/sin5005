@@ -191,4 +191,28 @@ describe ProductsController, type: :controller do
     end
 
 
+    describe 'DELETE destroy' do
+        
+        before :each do
+            @product = Product.create(
+                name: Faker::Lorem.word,
+                description: Faker::Lorem.paragraph(2),
+                price: 32,
+                old_price: 0
+            )
+        end
+        
+        it "deletes the product" do
+            expect{
+                delete :destroy, params: {:id => @product.id}        
+            }.to change(Product,:count).by(-1)
+        end
+        
+        it "redirects to products#index" do
+            delete :destroy, params: {:id => @product.id}  
+            response.should redirect_to products_url
+        end
+    end
+
+
 end
