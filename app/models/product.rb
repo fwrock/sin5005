@@ -5,4 +5,8 @@ class Product < ApplicationRecord
     validates :description, presence: {message: "Descrição do produto não pode ser vazia!"}
     validates :old_price, numericality: {:greater_than_or_equal_to => 0, message: "Preço antigo do produto deve ser maior ou igual a zero!"}
 
+    has_one :category, class_name: "Category"
+
+    validates_presence_of :category,  message: "Categoria não pode ser vazia!"
+
 end

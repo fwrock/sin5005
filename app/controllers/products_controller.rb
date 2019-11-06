@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
     end
 
     def new
+        @category = Category.all
         @product = Product.new
     end
 
@@ -19,6 +20,7 @@ class ProductsController < ApplicationController
             flash[:success] = "Produto cadastrado com sucesso!"
             redirect_to @product
         else
+            @category = Category.all
             render 'new'
         end
     end
@@ -47,6 +49,6 @@ class ProductsController < ApplicationController
     end
 
     def product_params
-        params.require(:product).permit(:name, :price, :description)
+        params.require(:product).permit(:name, :price, :description, :category)
     end
 end

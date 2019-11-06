@@ -46,6 +46,17 @@ describe Product do
             expect(product.errors[:description]).to include('Descrição do produto não pode ser vazia!') 
         end
 
+        it 'Product category invalid' do 
+            product = Product.new(
+                name: Faker::Name.name, 
+                description: "nil",
+                price: 43,
+                old_price: 0 
+            )
+            product.valid?
+            expect(product.errors[:category]).to include('Categoria não pode ser vazia!') 
+        end
+
         it "Product valid" do
             product = Product.new(
                 name: Faker::Name.name, 
@@ -53,8 +64,18 @@ describe Product do
                 price: 30,
                 old_price: 23 
             )
+            product.category = Category.new(
+                name: Faker::Name.name, 
+                description: Faker::Food.description,
+            )
             product.valid?
             expect(product).to be_valid
         end
+
+        it "Product hava one category" do
+            t = Product.reflect_on_association(:category)
+            expect(t.macro).to eq(:has_one)
+        end
+
     end
 end
