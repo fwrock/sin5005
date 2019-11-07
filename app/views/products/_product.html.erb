@@ -2,4 +2,7 @@
   <p>Nome: <%= link_to product.name, product %></p>
   <p>Descrição: <%= product.description %></p>
   <p>Preço: R$ <%= product.price%></p>
+  <p><%= link_to "delete", product, method: :delete,
+                                data: { confirm: "You sure?" } %></p>
+  <p><%= link_to "update", edit_product_path(product) %></p>
 </li>

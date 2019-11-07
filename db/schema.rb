@@ -22,14 +22,6 @@ ActiveRecord::Schema.define(version: 2019_11_15_190846) do
     t.index ["product_id"], name: "index_categories_on_product_id"
   end
 
-  create_table "messages", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.string "body"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.text "description"
